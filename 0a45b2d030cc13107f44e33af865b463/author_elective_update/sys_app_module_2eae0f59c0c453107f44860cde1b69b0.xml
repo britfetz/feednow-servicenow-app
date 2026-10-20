@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="FeedNow">c31c3e14300053107f44e33af865b403</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Food Requests</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_food_request</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <route/>
+        <screen/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>Harish</sys_created_by>
+        <sys_created_on>2026-10-19 21:41:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2eae0f59c0c453107f44860cde1b69b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Food Requests</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sys_app_module_2eae0f59c0c453107f44860cde1b69b0</sys_update_name>
+        <sys_updated_by>Harish</sys_updated_by>
+        <sys_updated_on>2026-10-19 21:41:11</sys_updated_on>
+        <timeline_page/>
+        <title>Food Requests</title>
+        <uncancelable>false</uncancelable>
+        <ux_list/>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</application>
+        <file_path/>
+        <instance_id>e4b77fed973bcfd8e93535d71153af5b</instance_id>
+        <instance_name>sya-oct-1140-0004</instance_name>
+        <name>sys_app_module_2eae0f59c0c453107f44860cde1b69b0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="FeedNow">c31c3e14300053107f44e33af865b403</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Food Requests</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_food_request</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><route/><screen/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>Harish</sys_created_by><sys_created_on>2026-10-19 21:41:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2eae0f59c0c453107f44860cde1b69b0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Food Requests</sys_name><sys_overrides/><sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package><sys_policy/><sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope><sys_update_name>sys_app_module_2eae0f59c0c453107f44860cde1b69b0</sys_update_name><sys_updated_by>Harish</sys_updated_by><sys_updated_on>2026-10-19 21:41:11</sys_updated_on><timeline_page/><title>Food Requests</title><uncancelable>false</uncancelable><ux_list/><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-352035873</payload_hash>
+        <record_name>Food Requests</record_name>
+        <reverted_from/>
+        <source>0a45b2d030cc13107f44e33af865b482</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Harish</sys_created_by>
+        <sys_created_on>2026-10-19 21:41:11</sys_created_on>
+        <sys_id>f93fcf99c0c453107f44860cde1b69b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1561c83390000001</sys_recorded_at>
+        <sys_updated_by>Harish</sys_updated_by>
+        <sys_updated_on>2026-10-19 21:41:11</sys_updated_on>
+        <type>Module</type>
+        <update_guid>3d3fcf99c5c453107ebaca19de1233b0</update_guid>
+        <update_guid_history>3d3fcf99c5c453107ebaca19de1233b0:-352035873</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Food Requests">ee7b9ba90c8413107f44b24760f2ef7f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Harish</sys_created_by>
+        <sys_created_on>2026-10-20 17:13:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>3912409529b844688183a027aa8d4910</sys_id>
+        <sys_metadata>2eae0f59c0c453107f44860cde1b69b0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Food Requests</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_scope_delete display_value="">7dd6c18e5dd4401893cff3956fcdf4e4</sys_scope_delete>
+        <sys_update_name>sys_app_module_2eae0f59c0c453107f44860cde1b69b0</sys_update_name>
+        <sys_update_version display_value="sys_app_module_2eae0f59c0c453107f44860cde1b69b0">f93fcf99c0c453107f44860cde1b69b1</sys_update_version>
+        <sys_updated_by>Harish</sys_updated_by>
+        <sys_updated_on>2026-10-20 17:13:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

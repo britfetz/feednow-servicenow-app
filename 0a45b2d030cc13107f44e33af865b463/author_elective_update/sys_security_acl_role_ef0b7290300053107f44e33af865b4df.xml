@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2026-10-16 17:39:11</sys_created_on>
+        <sys_id>ef0b7290300053107f44e33af865b4df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1234_feednow_donor.x_1234_feednow.donor_user</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_security_acl display_value="x_1234_feednow_donor">230b7290300053107f44e33af865b4db</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ef0b7290300053107f44e33af865b4df</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2026-10-16 17:39:11</sys_updated_on>
+        <sys_user_role display_value="x_1234_feednow.donor_user" name="x_1234_feednow.donor_user">621afa9c30cc13107f44e33af865b403</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</application>
+        <file_path/>
+        <instance_id>e4b77fed973bcfd8e93535d71153af5b</instance_id>
+        <instance_name>sya-oct-1140-0004</instance_name>
+        <name>sys_security_acl_role_ef0b7290300053107f44e33af865b4df</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>John</sys_created_by><sys_created_on>2026-10-16 17:39:11</sys_created_on><sys_id>ef0b7290300053107f44e33af865b4df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1234_feednow_donor.x_1234_feednow.donor_user</sys_name><sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package><sys_policy/><sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope><sys_security_acl display_value="x_1234_feednow_donor">230b7290300053107f44e33af865b4db</sys_security_acl><sys_update_name>sys_security_acl_role_ef0b7290300053107f44e33af865b4df</sys_update_name><sys_updated_by>John</sys_updated_by><sys_updated_on>2026-10-16 17:39:11</sys_updated_on><sys_user_role display_value="x_1234_feednow.donor_user" name="x_1234_feednow.donor_user">621afa9c30cc13107f44e33af865b403</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-621410915</payload_hash>
+        <record_name>x_1234_feednow_donor.x_1234_feednow.donor_user</record_name>
+        <reverted_from/>
+        <source>0a45b2d030cc13107f44e33af865b482</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2026-10-16 17:39:11</sys_created_on>
+        <sys_id>af0b7290300053107f44e33af865b4e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a145cbe0a40000001</sys_recorded_at>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2026-10-16 17:39:11</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>a30b7290c60053108d34be5d9ba6abe6</update_guid>
+        <update_guid_history>a30b7290c60053108d34be5d9ba6abe6:-621410915</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1234_feednow_donor.x_1234_feednow.donor_user">b744e25dc04053107f44860cde1b6998</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2026-10-19 18:33:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1af5e577d6dc43e09ba3337e6b7fe900</sys_id>
+        <sys_metadata>ef0b7290300053107f44e33af865b4df</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1234_feednow_donor.x_1234_feednow.donor_user</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_parent display_value="x_1234_feednow_donor">230b7290300053107f44e33af865b4db</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_scope_delete display_value="">7dd6c18e5dd4401893cff3956fcdf4e4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_ef0b7290300053107f44e33af865b4df</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_ef0b7290300053107f44e33af865b4df">af0b7290300053107f44e33af865b4e6</sys_update_version>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2026-10-19 18:33:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

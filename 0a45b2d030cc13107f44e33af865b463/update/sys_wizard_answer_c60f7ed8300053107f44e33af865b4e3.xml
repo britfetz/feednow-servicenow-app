@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Food Listings</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Food Listings</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">6ca46ebf292103107f44f3a98c1824ce</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>Moumita</sys_created_by>
+        <sys_created_on>2026-10-16 17:56:33</sys_created_on>
+        <sys_id>c60f7ed8300053107f44e33af865b4e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Food Listings</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sys_wizard_answer_c60f7ed8300053107f44e33af865b4e3</sys_update_name>
+        <sys_updated_by>Moumita</sys_updated_by>
+        <sys_updated_on>2026-10-16 17:56:33</sys_updated_on>
+        <table/>
+        <target_url>x_1234_feednow_food_listings.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

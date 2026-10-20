@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role/>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>John</sys_created_by>
+        <sys_created_on>2026-10-16 17:35:01</sys_created_on>
+        <sys_id>aa1afa9c30cc13107f44e33af865b406</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>621afa9c30cc13107f44e33af865b403</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sys_embedded_help_role_aa1afa9c30cc13107f44e33af865b406</sys_update_name>
+        <sys_updated_by>John</sys_updated_by>
+        <sys_updated_on>2026-10-16 17:35:01</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

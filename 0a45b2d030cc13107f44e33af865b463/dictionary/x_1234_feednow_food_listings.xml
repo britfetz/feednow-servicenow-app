@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="a2def6d8300053107f44e33af865b445" extends="task" label="Food Listings" max_length="40" name="x_1234_feednow_food_listings" type="collection">
+        <element label="Collected weight" max_length="38" name="collected_weight" type="decimal"/>
+        <element label="Collected on" max_length="40" name="collected_on" type="glide_date_time"/>
+        <element label="Allergens" max_length="255" name="allergens" type="string"/>
+        <element label="Donor" mandatory="true" max_length="32" name="donor" reference="x_1234_feednow_donor" type="reference"/>
+        <element label="Weight (kg)" mandatory="true" max_length="38" name="weight" type="decimal"/>
+        <element label="Claimed by" max_length="32" name="claimed_by" reference="x_1234_feednow_recipient" type="reference"/>
+        <element label="Escalated" max_length="40" name="escalated" type="boolean"/>
+        <element choice="1" default="open" label="Listing status" mandatory="true" max_length="40" name="listing_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Expired" sequence="3" value="expired"/>
+                <element inactive_on_update="false" label="Claimed" sequence="1" value="claimed"/>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Collected" sequence="2" value="collected"/>
+            </choice>
+        </element>
+        <element label="Items" mandatory="true" max_length="40" name="items" type="string"/>
+        <element label="Notes" max_length="40" name="notes" type="string"/>
+        <element choice="1" label="Food type" mandatory="true" max_length="255" name="food_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Bakery" sequence="0" value="bakery"/>
+                <element inactive_on_update="false" label="Produce" sequence="1" value="produce"/>
+                <element inactive_on_update="false" label="Prepared meals" sequence="2" value="prepared_meals"/>
+                <element inactive_on_update="false" label="Dairy" sequence="3" value="dairy"/>
+            </choice>
+        </element>
+        <element label="Claimed on" max_length="40" name="claimed_on" type="glide_date_time"/>
+        <element label="Pickup by" mandatory="true" max_length="40" name="pickup_by" type="glide_date_time"/>
+    </element>
+</database>

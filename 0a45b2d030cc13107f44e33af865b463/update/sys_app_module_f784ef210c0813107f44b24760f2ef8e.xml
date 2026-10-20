@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="FeedNow">c31c3e14300053107f44e33af865b403</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Food Requests</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1234_feednow_food_request</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1234_feednow.food_request_user</roles>
+        <route/>
+        <screen/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>Harish</sys_created_by>
+        <sys_created_on>2026-10-20 17:52:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f784ef210c0813107f44b24760f2ef8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Food Requests</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sys_app_module_f784ef210c0813107f44b24760f2ef8e</sys_update_name>
+        <sys_updated_by>Harish</sys_updated_by>
+        <sys_updated_on>2026-10-20 17:52:56</sys_updated_on>
+        <timeline_page/>
+        <title>Food Requests</title>
+        <uncancelable>false</uncancelable>
+        <ux_list/>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

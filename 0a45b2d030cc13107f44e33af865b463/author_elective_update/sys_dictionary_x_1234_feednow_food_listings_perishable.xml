@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="perishable" table="x_1234_feednow_food_listings">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Perishable</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>perishable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="">boolean</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_1234_feednow_food_listings</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>Moumita</sys_created_by>
+        <sys_created_on>2026-10-16 19:19:03</sys_created_on>
+        <sys_id>66e1179430c053107f44e33af865b40d</sys_id>
+        <sys_name>Perishable</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sys_dictionary_x_1234_feednow_food_listings_perishable</sys_update_name>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-18 13:56:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</application>
+        <file_path/>
+        <instance_id>e4b77fed973bcfd8e93535d71153af5b</instance_id>
+        <instance_name>sya-oct-1140-0004</instance_name>
+        <name>sys_dictionary_x_1234_feednow_food_listings_perishable</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="perishable" table="x_1234_feednow_food_listings"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Perishable</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>perishable</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="">boolean</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1234_feednow_food_listings</name><next_element/><primary>false</primary><read_only>false</read_only><read_only_option/><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>Moumita</sys_created_by><sys_created_on>2026-10-16 19:19:03</sys_created_on><sys_id>66e1179430c053107f44e33af865b40d</sys_id><sys_name>Perishable</sys_name><sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package><sys_policy/><sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope><sys_update_name>sys_dictionary_x_1234_feednow_food_listings_perishable</sys_update_name><sys_updated_by>Brittany</sys_updated_by><sys_updated_on>2026-10-18 13:56:20</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>-2245062</payload_hash>
+        <record_name>Food Listings.Perishable</record_name>
+        <reverted_from/>
+        <source>0a45b2d030cc13107f44e33af865b482</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-18 13:56:20</sys_created_on>
+        <sys_id>3e3b5489a5c413107f4483acc6c6a116</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a14f4c91460000001</sys_recorded_at>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-18 13:56:20</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>323b5489efc41310cbd36163f97a2c16</update_guid>
+        <update_guid_history>323b5489efc41310cbd36163f97a2c16:-2245062,657b5798700453108346b088c9893267:-1603686061,43e117940bc05310ed9791fab49ff68f:-2245062</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-19 17:33:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>4155aabc1dd14d308a7705b53696b690</sys_id>
+        <sys_metadata>66e1179430c053107f44e33af865b40d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Perishable</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_parent display_value="Food Listings">a2def6d8300053107f44e33af865b445</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_scope_delete display_value="">7dd6c18e5dd4401893cff3956fcdf4e4</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_1234_feednow_food_listings_perishable</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_1234_feednow_food_listings_perishable">3e3b5489a5c413107f4483acc6c6a116</sys_update_version>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 17:33:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

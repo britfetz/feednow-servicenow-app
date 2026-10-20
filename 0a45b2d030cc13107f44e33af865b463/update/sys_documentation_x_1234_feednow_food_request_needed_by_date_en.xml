@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="needed_by_date" label="Needed By Date" language="en" table="x_1234_feednow_food_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>needed_by_date</element>
+            <help/>
+            <hint/>
+            <label>Needed By Date</label>
+            <language>en</language>
+            <name>x_1234_feednow_food_request</name>
+            <plural>Needed By Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Harish</sys_created_by>
+            <sys_created_on>2026-10-20 17:57:46</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Needed By Date</sys_name>
+            <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+            <sys_update_name>sys_documentation_x_1234_feednow_food_request_needed_by_date_en</sys_update_name>
+            <sys_updated_by>Harish</sys_updated_by>
+            <sys_updated_on>2026-10-20 17:57:46</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

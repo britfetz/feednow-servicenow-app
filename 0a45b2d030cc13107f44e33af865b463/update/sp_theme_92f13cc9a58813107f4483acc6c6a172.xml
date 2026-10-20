@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>/* ============================================================&#13;
+   FeedNow · Fig &amp; Apricot — Service Portal THEME VARIABLES&#13;
+   Paste into: Service Portal &gt; Themes &gt; [FeedNow] &gt; "CSS variables"&#13;
+   These override the portal's built-in Bootstrap variables.&#13;
+   ============================================================ */&#13;
+&#13;
+/* ---- Palette ---- */&#13;
+$fn-fig:          #3A1B2A;   /* header, dark panels */&#13;
+$fn-fig-light:    #6A3D52;   /* logo ring track, nav hover */&#13;
+$fn-apricot:      #A8521C;   /* primary buttons, links */&#13;
+$fn-apricot-dark: #8C4415;   /* button hover */&#13;
+$fn-apricot-light:#E58A3A;   /* accents, urgent bars (not for text) */&#13;
+$fn-saffron:      #F2A93B;   /* active nav, "Post surplus" button */&#13;
+$fn-ink:          #2E1620;   /* body text */&#13;
+$fn-cream:        #F7EFE6;   /* page background */&#13;
+$fn-card:         #FFFAF4;   /* cards, panels */&#13;
+$fn-line:         #EBDCCB;   /* borders, dividers */&#13;
+$fn-muted:        #6B4E4A;   /* secondary text */&#13;
+&#13;
+/* ---- Bootstrap / Service Portal overrides ---- */&#13;
+$brand-primary:   $fn-apricot;&#13;
+$brand-success:   #6A4405;&#13;
+$brand-info:      $fn-fig-light;&#13;
+$brand-warning:   #8A4B05;&#13;
+$brand-danger:    #8A3E0C;&#13;
+&#13;
+$body-bg:          $fn-cream;&#13;
+$text-color:       $fn-ink;&#13;
+$text-muted:       $fn-muted;&#13;
+$link-color:       $fn-apricot;&#13;
+$link-hover-color: $fn-apricot-dark;&#13;
+&#13;
+$font-family-sans-serif: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;&#13;
+$headings-font-family:   'Bricolage Grotesque', 'DM Sans', sans-serif;&#13;
+$headings-font-weight:   700;&#13;
+$headings-color:         $fn-ink;&#13;
+$font-size-base:         16px;&#13;
+&#13;
+$border-radius-base:  10px;&#13;
+$border-radius-large: 14px;&#13;
+$border-radius-small: 8px;&#13;
+&#13;
+/* Header (Service Portal uses the inverse navbar) */&#13;
+$navbar-inverse-bg:                $fn-fig;&#13;
+$navbar-inverse-border:            $fn-fig;&#13;
+$navbar-inverse-color:             #EADBE0;&#13;
+$navbar-inverse-link-color:        #EADBE0;&#13;
+$navbar-inverse-link-hover-color:  #FFFFFF;&#13;
+$navbar-inverse-link-hover-bg:     $fn-fig-light;&#13;
+$navbar-inverse-link-active-color: $fn-ink;&#13;
+$navbar-inverse-link-active-bg:    $fn-saffron;&#13;
+$navbar-inverse-brand-color:       $fn-cream;&#13;
+&#13;
+/* Buttons */&#13;
+$btn-primary-bg:     $fn-apricot;&#13;
+$btn-primary-border: $fn-apricot;&#13;
+$btn-primary-color:  #FFFFFF;&#13;
+$btn-default-bg:     $fn-card;&#13;
+$btn-default-border: $fn-apricot;&#13;
+$btn-default-color:  $fn-apricot;&#13;
+&#13;
+/* Panels &amp; inputs */&#13;
+$panel-bg:                 $fn-card;&#13;
+$panel-default-border:     $fn-line;&#13;
+$panel-default-heading-bg: $fn-card;&#13;
+$input-border:             #D8C6B4;&#13;
+$input-border-focus:       $fn-apricot;&#13;
+$input-border-radius:      10px;&#13;
+$list-group-bg:            $fn-card;&#13;
+$list-group-border:        $fn-line;&#13;
+&#13;
+</css_variables>
+        <footer/>
+        <footer_fixed>false</footer_fixed>
+        <header display_value="Stock Header">bf5ec2f2cb10120000f8d856634c9c0c</header>
+        <icon/>
+        <logo/>
+        <logo_alt_text/>
+        <matching_now_experience_theme/>
+        <name>FeedNow</name>
+        <navbar_fixed>false</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-18 15:46:07</sys_created_on>
+        <sys_id>92f13cc9a58813107f4483acc6c6a172</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>FeedNow</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sp_theme_92f13cc9a58813107f4483acc6c6a172</sys_update_name>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 13:56:01</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_theme>
+    <sys_translated_text action="delete_multiple" query="documentkey=92f13cc9a58813107f4483acc6c6a172"/>
+</record_update>

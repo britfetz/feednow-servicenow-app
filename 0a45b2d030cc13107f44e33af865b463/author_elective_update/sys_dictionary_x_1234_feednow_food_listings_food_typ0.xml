@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="food_typ0" table="x_1234_feednow_food_listings">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Food type</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>food_typ0</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="Choice">choice</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <name>x_1234_feednow_food_listings</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-18 13:32:43</sys_created_on>
+        <sys_id>b8d55c8da58413107f4483acc6c6a1fe</sys_id>
+        <sys_name>Food type</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sys_dictionary_x_1234_feednow_food_listings_food_typ0</sys_update_name>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-18 13:32:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</application>
+        <file_path/>
+        <instance_id>e4b77fed973bcfd8e93535d71153af5b</instance_id>
+        <instance_name>sya-oct-1140-0004</instance_name>
+        <name>sys_dictionary_x_1234_feednow_food_listings_food_typ0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="food_typ0" table="x_1234_feednow_food_listings"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Food type</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>food_typ0</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>true</mandatory><max_length>40</max_length><name>x_1234_feednow_food_listings</name><next_element/><primary>false</primary><read_only>false</read_only><read_only_option/><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>Brittany</sys_created_by><sys_created_on>2026-10-18 13:32:43</sys_created_on><sys_id>b8d55c8da58413107f4483acc6c6a1fe</sys_id><sys_name>Food type</sys_name><sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package><sys_policy/><sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope><sys_update_name>sys_dictionary_x_1234_feednow_food_listings_food_typ0</sys_update_name><sys_updated_by>Brittany</sys_updated_by><sys_updated_on>2026-10-18 13:32:43</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>-1451815507</payload_hash>
+        <record_name>Food Listings.Food type</record_name>
+        <reverted_from/>
+        <source>0a45b2d030cc13107f44e33af865b482</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-18 13:32:44</sys_created_on>
+        <sys_id>05d59c8da58413107f4483acc6c6a19a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a14f36f4df0000001</sys_recorded_at>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-18 13:32:44</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>09d59c8dca84131009fb8243fccfa499</update_guid>
+        <update_guid_history>09d59c8dca84131009fb8243fccfa499:-1451815507,fcd59c8d1c841310c5c4991a45751f7d:-1630723650</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-18 13:33:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>0951550ac6fe485c8074c281771515f1</sys_id>
+        <sys_metadata>b8d55c8da58413107f4483acc6c6a1fe</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Food type</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_parent display_value="Food Listings">a2def6d8300053107f44e33af865b445</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_scope_delete display_value="">7dd6c18e5dd4401893cff3956fcdf4e4</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_1234_feednow_food_listings_food_typ0</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_1234_feednow_food_listings_food_typ0">05d59c8da58413107f4483acc6c6a19a</sys_update_version>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-18 13:33:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

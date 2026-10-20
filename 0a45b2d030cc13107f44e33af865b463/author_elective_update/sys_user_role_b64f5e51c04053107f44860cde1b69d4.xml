@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Manages organizations, approvals and escalations</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1234_feednow.feednow_admin</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>feednow_admin</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-19 18:12:08</sys_created_on>
+        <sys_id>b64f5e51c04053107f44860cde1b69d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1234_feednow.feednow_admin</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sys_user_role_b64f5e51c04053107f44860cde1b69d4</sys_update_name>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 18:12:08</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</application>
+        <file_path/>
+        <instance_id>e4b77fed973bcfd8e93535d71153af5b</instance_id>
+        <instance_name>sya-oct-1140-0004</instance_name>
+        <name>sys_user_role_b64f5e51c04053107f44860cde1b69d4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description>Manages organizations, approvals and escalations</description><elevated_privilege>false</elevated_privilege><federated_id/><grantable>true</grantable><includes_roles/><name>x_1234_feednow.feednow_admin</name><scoped_admin>false</scoped_admin><suffix>feednow_admin</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>Brittany</sys_created_by><sys_created_on>2026-10-19 18:12:08</sys_created_on><sys_id>b64f5e51c04053107f44860cde1b69d4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1234_feednow.feednow_admin</sys_name><sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package><sys_policy/><sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope><sys_update_name>sys_user_role_b64f5e51c04053107f44860cde1b69d4</sys_update_name><sys_updated_by>Brittany</sys_updated_by><sys_updated_on>2026-10-19 18:12:08</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-1510877435</payload_hash>
+        <record_name>x_1234_feednow.feednow_admin</record_name>
+        <reverted_from/>
+        <source>0a45b2d030cc13107f44e33af865b482</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-19 18:12:09</sys_created_on>
+        <sys_id>2f5f5291c04053107f44860cde1b69b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1555d20a70000001</sys_recorded_at>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 18:12:09</sys_updated_on>
+        <type>Role</type>
+        <update_guid>2f5f529153405310a5a67122e10057af</update_guid>
+        <update_guid_history>2f5f529153405310a5a67122e10057af:-1510877435</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1234_feednow.feednow_admin">5b54665dc04053107f44860cde1b6980</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-19 18:33:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>045b6ba4874241f4888994ff0dbb2244</sys_id>
+        <sys_metadata>b64f5e51c04053107f44860cde1b69d4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1234_feednow.feednow_admin</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_scope_delete display_value="">7dd6c18e5dd4401893cff3956fcdf4e4</sys_scope_delete>
+        <sys_update_name>sys_user_role_b64f5e51c04053107f44860cde1b69d4</sys_update_name>
+        <sys_update_version display_value="sys_user_role_b64f5e51c04053107f44860cde1b69d4">2f5f5291c04053107f44860cde1b69b0</sys_update_version>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 18:33:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

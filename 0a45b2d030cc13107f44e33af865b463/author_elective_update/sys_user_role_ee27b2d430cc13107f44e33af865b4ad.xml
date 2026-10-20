@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1234_feednow.food_listings_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>food_listings_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>Moumita</sys_created_by>
+        <sys_created_on>2026-10-16 17:22:11</sys_created_on>
+        <sys_id>ee27b2d430cc13107f44e33af865b4ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1234_feednow.food_listings_user</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sys_user_role_ee27b2d430cc13107f44e33af865b4ad</sys_update_name>
+        <sys_updated_by>Moumita</sys_updated_by>
+        <sys_updated_on>2026-10-16 17:22:11</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</application>
+        <file_path/>
+        <instance_id>e4b77fed973bcfd8e93535d71153af5b</instance_id>
+        <instance_name>sya-oct-1140-0004</instance_name>
+        <name>sys_user_role_ee27b2d430cc13107f44e33af865b4ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><federated_id/><grantable>true</grantable><includes_roles/><name>x_1234_feednow.food_listings_user</name><scoped_admin>false</scoped_admin><suffix>food_listings_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>Moumita</sys_created_by><sys_created_on>2026-10-16 17:22:11</sys_created_on><sys_id>ee27b2d430cc13107f44e33af865b4ad</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1234_feednow.food_listings_user</sys_name><sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package><sys_policy/><sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope><sys_update_name>sys_user_role_ee27b2d430cc13107f44e33af865b4ad</sys_update_name><sys_updated_by>Moumita</sys_updated_by><sys_updated_on>2026-10-16 17:22:11</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-1660981244</payload_hash>
+        <record_name>x_1234_feednow.food_listings_user</record_name>
+        <reverted_from/>
+        <source>0a45b2d030cc13107f44e33af865b482</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Moumita</sys_created_by>
+        <sys_created_on>2026-10-16 17:22:11</sys_created_on>
+        <sys_id>6e277ad430cc13107f44e33af865b4c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a145bc4f0a0000001</sys_recorded_at>
+        <sys_updated_by>Moumita</sys_updated_by>
+        <sys_updated_on>2026-10-16 17:22:11</sys_updated_on>
+        <type>Role</type>
+        <update_guid>6e277ad4e0cc1310f67af28f1951dfc0</update_guid>
+        <update_guid_history>6e277ad4e0cc1310f67af28f1951dfc0:-1660981244</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1234_feednow.food_listings_user">d274aa5dc04053107f44860cde1b694d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Moumita</sys_created_by>
+        <sys_created_on>2026-10-19 18:34:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>3d4f69bd2e0f41b69974ac0f00fff6e1</sys_id>
+        <sys_metadata>ee27b2d430cc13107f44e33af865b4ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1234_feednow.food_listings_user</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_scope_delete display_value="">7dd6c18e5dd4401893cff3956fcdf4e4</sys_scope_delete>
+        <sys_update_name>sys_user_role_ee27b2d430cc13107f44e33af865b4ad</sys_update_name>
+        <sys_update_version display_value="sys_user_role_ee27b2d430cc13107f44e33af865b4ad">6e277ad430cc13107f44e33af865b4c1</sys_update_version>
+        <sys_updated_by>Moumita</sys_updated_by>
+        <sys_updated_on>2026-10-19 18:34:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

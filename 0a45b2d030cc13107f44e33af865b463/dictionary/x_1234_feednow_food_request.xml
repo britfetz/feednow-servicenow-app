@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0574eb210c0813107f44b24760f2efd8" extends="task" label="Food Request" max_length="40" name="x_1234_feednow_food_request" type="collection">
+        <element choice="3" label="Food Type Needed" mandatory="true" max_length="40" name="food_type_needed" type="choice">
+            <choice/>
+        </element>
+        <element label="Urgent" max_length="40" name="urgent" type="boolean"/>
+        <element label="Recipient" mandatory="true" max_length="32" name="recipient" reference="x_1234_feednow_recipient" type="reference"/>
+        <element label="Servings Needed" mandatory="true" max_length="40" name="servings_needed" type="integer"/>
+        <element display="true" label="Matched Listing" max_length="32" name="matched_listing" reference="x_1234_feednow_food_listings" type="reference"/>
+        <element label="Needed By Date" mandatory="true" max_length="40" name="needed_by_date" type="glide_date_time"/>
+    </element>
+</database>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_1234_feednow_recipient">x_1234_feednow_recipient</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>REC</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>Moumita</sys_created_by>
+        <sys_created_on>2026-10-16 17:43:49</sys_created_on>
+        <sys_id>eb1c3e14300053107f44e33af865b4af</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>REC</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sys_number_eb1c3e14300053107f44e33af865b4af</sys_update_name>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-18 15:14:06</sys_updated_on>
+    </sys_number>
+</record_update>

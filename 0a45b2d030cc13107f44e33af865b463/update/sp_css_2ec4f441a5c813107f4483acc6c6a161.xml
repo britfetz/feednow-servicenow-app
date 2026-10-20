@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>/* ============================================================&#13;
+   FeedNow Â· Fig &amp; Apricot â€” Service Portal STYLESHEET&#13;
+   Create via sp_css.list &gt; New (name: feednow-theme),&#13;
+   then add to your theme: Themes &gt; [FeedNow] &gt; CSS Includes &gt; New.&#13;
+   Load fonts with a separate CSS Include (Source: URL) â€” see notes.&#13;
+   ============================================================ */&#13;
+&#13;
+:root {&#13;
+  --fn-fig: #3A1B2A;&#13;
+  --fn-fig-light: #6A3D52;&#13;
+  --fn-apricot: #A8521C;&#13;
+  --fn-apricot-dark: #8C4415;&#13;
+  --fn-apricot-light: #E58A3A;&#13;
+  --fn-saffron: #F2A93B;&#13;
+  --fn-ink: #2E1620;&#13;
+  --fn-cream: #F7EFE6;&#13;
+  --fn-card: #FFFAF4;&#13;
+  --fn-line: #EBDCCB;&#13;
+  --fn-muted: #6B4E4A;&#13;
+&#13;
+  /* status pills */&#13;
+  --fn-hot-bg: #FBE1C9;   --fn-hot-text: #8A3E0C;   /* urgent / breach */&#13;
+  --fn-ok-bg: #F6E7C6;    --fn-ok-text: #6A4405;    /* open / claimed */&#13;
+  --fn-warn-bg: #FCEBCB;  --fn-warn-text: #8A4B05;  /* SLA warning */&#13;
+}&#13;
+&#13;
+/* ---------- Base ---------- */&#13;
+body {&#13;
+  background: var(--fn-cream);&#13;
+  color: var(--fn-ink);&#13;
+  font-family: 'DM Sans', system-ui, sans-serif;&#13;
+}&#13;
+h1, h2, h3, h4, .fn-display {&#13;
+  font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;&#13;
+  color: var(--fn-ink);&#13;
+  letter-spacing: -0.01em;&#13;
+}&#13;
+a { color: var(--fn-apricot); }&#13;
+a:hover, a:focus { color: var(--fn-apricot-dark); }&#13;
+&#13;
+/* ---------- Header ---------- */&#13;
+.navbar, .navbar-inverse {&#13;
+  background: var(--fn-fig);&#13;
+  border: 0;&#13;
+}&#13;
+.navbar .navbar-brand {&#13;
+  font-family: 'Bricolage Grotesque', sans-serif;&#13;
+  font-weight: 700;&#13;
+  font-size: 21px;&#13;
+  letter-spacing: -0.01em;&#13;
+  color: var(--fn-cream);&#13;
+}&#13;
+&#13;
+/* stop the header from clipping the FeedNow title */&#13;
+.navbar-header,&#13;
+.navbar-brand,&#13;
+.navbar-brand * {&#13;
+  width: auto !important;&#13;
+  max-width: none !important;&#13;
+  overflow: visible !important;&#13;
+  text-overflow: clip !important;&#13;
+  white-space: nowrap !important;&#13;
+}&#13;
+.navbar-brand { padding-left: 20px !important; padding-right: 24px !important; }&#13;
+.navbar .navbar-brand .fn-now { color: var(--fn-saffron); } /* wrap "Now" in &lt;span class="fn-now"&gt; */&#13;
+.navbar-inverse .navbar-nav &gt; li &gt; a {&#13;
+  color: #EADBE0;&#13;
+  border-radius: 8px;&#13;
+  font-weight: 500;&#13;
+}&#13;
+.navbar-inverse .navbar-nav &gt; li &gt; a:hover { background: var(--fn-fig-light); color: #FFFFFF; }&#13;
+.navbar-inverse .navbar-nav &gt; .active &gt; a,&#13;
+.navbar-inverse .navbar-nav &gt; .active &gt; a:hover {&#13;
+  background: var(--fn-saffron);&#13;
+  color: var(--fn-ink);&#13;
+}&#13;
+&#13;
+/* ---------- Buttons ---------- */&#13;
+.btn { border-radius: 10px; font-weight: 700; min-height: 44px; }&#13;
+.btn-primary { background: var(--fn-apricot); border-color: var(--fn-apricot); color: #FFFFFF; }&#13;
+.btn-primary:hover, .btn-primary:focus { background: var(--fn-apricot-dark); border-color: var(--fn-apricot-dark); color: #FFFFFF; }&#13;
+.btn-default { background: var(--fn-card); border-color: var(--fn-apricot); color: var(--fn-apricot); }&#13;
+.btn-default:hover { background: var(--fn-hot-bg); }&#13;
+.btn-fn-post {               /* "Post surplus food" call to action */&#13;
+  background: var(--fn-saffron);&#13;
+  border-color: var(--fn-saffron);&#13;
+  color: var(--fn-ink);&#13;
+}&#13;
+.btn-fn-post:hover { background: #E0962A; border-color: #E0962A; color: var(--fn-ink); }&#13;
+&#13;
+/* ---------- Cards / panels ---------- */&#13;
+.panel, .fn-card {&#13;
+  background: var(--fn-card);&#13;
+  border: 1px solid var(--fn-line);&#13;
+  border-radius: 14px;&#13;
+  box-shadow: none;&#13;
+}&#13;
+.panel-heading { background: transparent; border-bottom: 1px solid var(--fn-line); }&#13;
+.fn-card { padding: 20px; }&#13;
+.fn-card-dark {&#13;
+  background: var(--fn-fig);&#13;
+  color: var(--fn-cream);&#13;
+  border-radius: 14px;&#13;
+  padding: 20px;&#13;
+}&#13;
+.text-muted, .fn-muted { color: var(--fn-muted); }&#13;
+&#13;
+/* ---------- Status pills (listing timers, SLA states) ---------- */&#13;
+.fn-pill {&#13;
+  display: inline-block;&#13;
+  padding: 4px 10px;&#13;
+  border-radius: 999px;&#13;
+  font-size: 13px;&#13;
+  font-weight: 700;&#13;
+}&#13;
+.fn-pill-urgent  { background: var(--fn-hot-bg);  color: var(--fn-hot-text); }&#13;
+.fn-pill-open    { background: var(--fn-ok-bg);   color: var(--fn-ok-text); }&#13;
+.fn-pill-warning { background: var(--fn-warn-bg); color: var(--fn-warn-text); }&#13;
+&#13;
+/* Filter chips */&#13;
+.fn-chip {&#13;
+  display: inline-block;&#13;
+  padding: 8px 14px;&#13;
+  border-radius: 999px;&#13;
+  background: var(--fn-card);&#13;
+  border: 1px solid var(--fn-line);&#13;
+  font-size: 14px;&#13;
+  color: var(--fn-ink);&#13;
+}&#13;
+.fn-chip.active { background: var(--fn-ink); color: var(--fn-card); border-color: var(--fn-ink); }&#13;
+&#13;
+/* Countdown bar */&#13;
+.fn-bar { height: 6px; border-radius: 3px; background: var(--fn-line); overflow: hidden; }&#13;
+.fn-bar &gt; span { display: block; height: 100%; background: var(--fn-apricot); }&#13;
+.fn-bar.urgent &gt; span { background: var(--fn-apricot-light); }&#13;
+&#13;
+/* ---------- Forms ---------- */&#13;
+.form-control {&#13;
+  min-height: 44px;&#13;
+  border-radius: 10px;&#13;
+  border-color: #D8C6B4;&#13;
+  background: #FFFFFF;&#13;
+  color: var(--fn-ink);&#13;
+}&#13;
+.form-control:focus {&#13;
+  border-color: var(--fn-apricot);&#13;
+  box-shadow: 0 0 0 3px rgba(168, 82, 28, 0.2);&#13;
+}&#13;
+&#13;
+/* ---------- Footer ---------- */&#13;
+.fn-footer { background: var(--fn-fig); color: var(--fn-cream); padding: 24px 0; }&#13;
+&#13;
+/* let the FeedNow title fit */&#13;
+.navbar-brand,&#13;
+.navbar-header .navbar-brand {&#13;
+  width: auto !important;&#13;
+  max-width: none !important;&#13;
+  overflow: visible !important;&#13;
+  white-space: nowrap;&#13;
+  padding-right: 24px;&#13;
+}&#13;
+&#13;
+/* hide the Guided Tours link in the header */&#13;
+.navbar .gtd-dropdown-container,&#13;
+#tour-dropdown {&#13;
+  display: none !important;&#13;
+}</css>
+        <name>feednow-theme</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-18 15:48:51</sys_created_on>
+        <sys_id>2ec4f441a5c813107f4483acc6c6a161</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>feednow-theme</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sp_css_2ec4f441a5c813107f4483acc6c6a161</sys_update_name>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 14:04:10</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_css>
+</record_update>

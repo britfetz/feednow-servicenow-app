@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <aria_label/>
+        <class_name/>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_column/>
+        <sp_container display_value="Open Listings - Container 1">c10ba151c08813107f44860cde1b696d</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-19 14:23:43</sys_created_on>
+        <sys_id>1d1b2551c08813107f44860cde1b692b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sp_row_1d1b2551c08813107f44860cde1b692b</sys_update_name>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 14:23:43</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</application>
+        <file_path/>
+        <instance_id>e4b77fed973bcfd8e93535d71153af5b</instance_id>
+        <instance_name>sya-oct-1140-0004</instance_name>
+        <name>sp_row_1d1b2551c08813107f44860cde1b692b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><aria_label/><class_name/><order>1</order><semantic_tag/><sp_column/><sp_container display_value="Open Listings - Container 1">c10ba151c08813107f44860cde1b696d</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>Brittany</sys_created_by><sys_created_on>2026-10-19 14:23:43</sys_created_on><sys_id>1d1b2551c08813107f44860cde1b692b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package><sys_policy/><sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope><sys_update_name>sp_row_1d1b2551c08813107f44860cde1b692b</sys_update_name><sys_updated_by>Brittany</sys_updated_by><sys_updated_on>2026-10-19 14:23:43</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>-2025424715</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>0a45b2d030cc13107f44e33af865b482</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-19 14:23:43</sys_created_on>
+        <sys_id>d11b2551c08813107f44860cde1b692f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1548bfead0000001</sys_recorded_at>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 14:23:43</sys_updated_on>
+        <type>Row</type>
+        <update_guid>d11b255120881310236f630573c3752e</update_guid>
+        <update_guid_history>d11b255120881310236f630573c3752e:-2025424715</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">9150b11dc08813107f44860cde1b69ff</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-19 14:46:40</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>1077396026254acc81bbce1da6555da4</sys_id>
+        <sys_metadata>1d1b2551c08813107f44860cde1b692b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_scope_delete display_value="">7dd6c18e5dd4401893cff3956fcdf4e4</sys_scope_delete>
+        <sys_update_name>sp_row_1d1b2551c08813107f44860cde1b692b</sys_update_name>
+        <sys_update_version display_value="sp_row_1d1b2551c08813107f44860cde1b692b">d11b2551c08813107f44860cde1b692f</sys_update_version>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 14:46:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

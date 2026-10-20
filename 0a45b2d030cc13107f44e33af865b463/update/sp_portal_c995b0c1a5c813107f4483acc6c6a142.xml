@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <alternate_portal/>
+        <communication_channels/>
+        <css_variables/>
+        <dark_theme/>
+        <default>false</default>
+        <embeddable_macroponents/>
+        <enable_ais>true</enable_ais>
+        <enable_certificate_based_authentication>false</enable_certificate_based_authentication>
+        <enable_embeddables>false</enable_embeddables>
+        <enable_favorites>false</enable_favorites>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="fn_listings">10706d99c00813107f44860cde1b6933</homepage>
+        <icon/>
+        <inactive>false</inactive>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <logo_alt_text>FeedNow</logo_alt_text>
+        <notfound_page/>
+        <quick_start_config/>
+        <rtl_enabled>false</rtl_enabled>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <search_application display_value="Service Portal Default Search Application">00731b9d5b231010d9a5ce1a8581c7dd</search_application>
+        <search_results_configuration display_value="Service Portal Search">80eb579d53671010968addeeff7b1215</search_results_configuration>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="FeedNow Main Menu">a86f1919c00813107f44860cde1b69c0</sp_rectangle_menu>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-18 15:53:16</sys_created_on>
+        <sys_id>c995b0c1a5c813107f4483acc6c6a142</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>FeedNow</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sp_portal_c995b0c1a5c813107f4483acc6c6a142</sys_update_name>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 13:50:37</sys_updated_on>
+        <theme display_value="FeedNow">92f13cc9a58813107f4483acc6c6a172</theme>
+        <title>FeedNow</title>
+        <ts_index_group/>
+        <url_suffix>feednow</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=c995b0c1a5c813107f4483acc6c6a142"/>
+</record_update>

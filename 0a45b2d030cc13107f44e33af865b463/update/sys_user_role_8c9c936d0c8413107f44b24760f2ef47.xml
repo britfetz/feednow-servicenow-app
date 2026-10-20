@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>+Sn6IKv/3eCG/7lOaKbBCFTn1+M51KJq7207mFmZG+A=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1234_feednow.food_request_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>food_request_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>Harish</sys_created_by>
+        <sys_created_on>2026-10-20 17:17:59</sys_created_on>
+        <sys_id>8c9c936d0c8413107f44b24760f2ef47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1234_feednow.food_request_user</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sys_user_role_8c9c936d0c8413107f44b24760f2ef47</sys_update_name>
+        <sys_updated_by>Harish</sys_updated_by>
+        <sys_updated_on>2026-10-20 17:17:59</sys_updated_on>
+    </sys_user_role>
+</record_update>

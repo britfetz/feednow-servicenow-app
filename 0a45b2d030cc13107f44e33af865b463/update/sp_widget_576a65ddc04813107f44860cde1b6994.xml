@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[// FeedNow · Open listings widget — paste into the Client Controller pane.
+api.controller = function ($scope, $interval, spUtil) {
+  var c = this;
+  c.filter = 'all';
+  c.busy = false;
+
+  // cards shown for the selected food-type chip
+  c.visible = function () {
+    if (c.filter == 'all') return c.data.listings;
+    return c.data.listings.filter(function (l) { return l.foodTypeValue == c.filter; });
+  };
+
+  // Claim button
+  c.claim = function (l) {
+    c.busy = true;
+    c.server.get({ action: 'claim', sys_id: l.sys_id }).then(function (r) {
+      c.data = r.data;
+      if (r.data.message) spUtil.addInfoMessage(r.data.message);
+      c.busy = false;
+    });
+  };
+
+  // live updates: refresh when any listing changes, and every minute for the timers
+  spUtil.recordWatch($scope, c.data.table, '', function () { c.server.update(); });
+  var tick = $interval(function () { c.server.update(); }, 60000);
+  $scope.$on('$destroy', function () { $interval.cancel(tick); });
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* FeedNow · Open listings widget — paste into the CSS - SCSS pane.
+   Colors come from the feednow-theme stylesheet (fn-card, fn-pill, fn-bar, fn-chip, buttons). */
+
+.fn-listings { max-width: 1240px; margin: 0 auto; padding: 32px 16px 48px; }
+
+.fn-head {
+  display: flex; flex-wrap: wrap; gap: 16px;
+  align-items: flex-end; justify-content: space-between;
+  margin-bottom: 24px;
+}
+.fn-eyebrow { margin: 0 0 6px; font-size: 14px; font-weight: 700; letter-spacing: .04em; color: #A8521C; }
+.fn-title { margin: 0; font-size: 40px; line-height: 1.1; font-weight: 700; }
+.fn-sub { margin: 8px 0 0; }
+.fn-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.fn-chip { cursor: pointer; }
+
+.fn-layout { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
+.fn-grid {
+  flex: 999 1 560px; min-width: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px;
+}
+.fn-side { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+
+.fn-listing { display: flex; flex-direction: column; gap: 10px; }
+.fn-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.fn-donor { font-size: 13px; font-weight: 500; color: #6B4E4A; }
+.fn-item { margin: 0; font-size: 22px; line-height: 1.2; }
+.fn-meta { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 14px; color: #6B4E4A; }
+.fn-allergens { margin: 0; font-size: 13px; color: #6B4E4A; }
+.fn-listing .fn-pill-warning { align-self: flex-start; }
+.fn-listing .btn { margin-top: 4px; }
+
+.fn-empty { grid-column: 1 / -1; text-align: center; padding: 40px 20px; }
+.fn-empty h2 { margin: 0 0 6px; font-size: 22px; }
+
+.fn-side-title { margin: 0 0 12px; font-size: 20px; }
+.fn-card-dark .fn-side-title { color: #F7EFE6; }
+.fn-card-dark p { margin: 0; font-size: 14px; color: #EADBE0; }
+.fn-claim { border: 1px solid #EBDCCB; border-radius: 10px; padding: 12px; margin-top: 10px; }
+.fn-due { margin-top: 6px; font-size: 13px; font-weight: 700; color: #8A4B05; }
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>fn_open_listings</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>FeedNow Open Listings</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[// FeedNow · Open listings widget — paste into the Server Script pane.
+(function () {
+
+  /* ---------- CONFIG: check these match your table ----------
+     Column names are guesses from your field labels. If one is wrong,
+     open the field in Food Listings and copy its "Column name" here. */
+  var CFG = {
+    table:        'x_1234_feednow_food_listings',
+    items:        'items',
+    donor:        'donor',
+    foodType:     'food_type',
+    weight:       'weight',
+    allergens:    'allergens',
+    perishable:   'perishable',
+    pickupBy:     'pickup_by',
+    status:       'listing_status',
+    claimedBy:    'claimed_by',
+    claimedOn:    'claimed_on',
+    openValue:    'open',      // choice value for an open listing
+    claimedValue: 'claimed',   // choice value for a claimed listing
+    // Recipient table + the field on it that points to the logged-in user
+    recipientTable:     'x_1234_feednow_recipient',
+    recipientUserField: 'contact',
+    urgentMinutes: 10          // timer turns orange at or below this
+  };
+  data.table = CFG.table;
+
+  /* ---------- find the recipient record for the logged-in user ---------- */
+  function myRecipientId() {
+    var r = new GlideRecord(CFG.recipientTable);
+    if (!r.isValid() || !r.isValidField(CFG.recipientUserField)) return '';
+    r.addQuery(CFG.recipientUserField, gs.getUserID());
+    r.setLimit(1);
+    r.query();
+    return r.next() ? r.getUniqueValue() : '';
+  }
+
+  /* ---------- claim action (sent from the Claim button) ---------- */
+  if (input && input.action == 'claim' && input.sys_id) {
+    var g = new GlideRecordSecure(CFG.table);
+    if (g.get(input.sys_id) && g.getValue(CFG.status) == CFG.openValue) {
+      g.setValue(CFG.status, CFG.claimedValue);
+      g.setValue(CFG.claimedOn, new GlideDateTime());
+      var rid = myRecipientId();
+      if (rid) g.setValue(CFG.claimedBy, rid);
+      g.update();
+      data.message = 'Claimed: ' + g.getValue(CFG.items);
+    } else {
+      data.message = 'Sorry, someone else just claimed that one.';
+    }
+  }
+
+  /* ---------- helpers ---------- */
+  var now = new GlideDateTime().getNumericValue();
+
+  function timeOnly(gr, field) {
+    if (gr[field].nil()) return '';
+    var t = gr[field].getDisplayValue();           // e.g. 2026-10-19 21:30:00
+    return t.length >= 16 ? t.substring(11, 16) : t; // -> 21:30
+  }
+
+  // Minutes left + % of window left, from the active SLA if there is one,
+  // otherwise from Opened → Pickup by.
+  function countdown(gr) {
+    var sla = new GlideRecord('task_sla');
+    sla.addQuery('task', gr.getUniqueValue());
+    sla.addQuery('active', true);
+    sla.orderBy('planned_end_time');
+    sla.setLimit(1);
+    sla.query();
+    if (sla.next() && !sla.planned_end_time.nil()) {
+      var end = new GlideDateTime(sla.getValue('planned_end_time')).getNumericValue();
+      var used = parseFloat(sla.getValue('percentage')) || 0;
+      return { mins: Math.round((end - now) / 60000), pct: Math.max(0, Math.min(100, 100 - used)) };
+    }
+    if (gr[CFG.pickupBy].nil()) return { mins: null, pct: 100 };
+    var due = new GlideDateTime(gr.getValue(CFG.pickupBy)).getNumericValue();
+    var start = new GlideDateTime(gr.getValue('opened_at') || gr.getValue('sys_created_on')).getNumericValue();
+    var total = Math.max(1, due - start);
+    return { mins: Math.round((due - now) / 60000), pct: Math.max(0, Math.min(100, Math.round((due - now) / total * 100))) };
+  }
+
+  function card(gr) {
+    var cd = countdown(gr);
+    var label = cd.mins === null ? 'Open'
+              : cd.mins <= 0 ? 'Time is up'
+              : cd.mins + ' min to claim';
+    return {
+      sys_id:     gr.getUniqueValue(),
+      items:      gr.getDisplayValue(CFG.items) || gr.getDisplayValue('short_description') || gr.getDisplayValue('number'),
+      donor:      gr.getDisplayValue(CFG.donor),
+      foodType:   gr.getDisplayValue(CFG.foodType),
+      foodTypeValue: gr.getValue(CFG.foodType),
+      weight:     gr.getValue(CFG.weight) ? parseFloat(gr.getValue(CFG.weight)) : '',
+      allergens:  gr.getDisplayValue(CFG.allergens),
+      perishable: gr.getValue(CFG.perishable) == '1' || gr.getValue(CFG.perishable) == 'true',
+      pickupBy:   timeOnly(gr, CFG.pickupBy),
+      timerLabel: label,
+      urgent:     cd.mins !== null && cd.mins <= CFG.urgentMinutes,
+      pctLeft:    cd.pct
+    };
+  }
+
+  /* ---------- open listings (respects ACLs) ---------- */
+  data.listings = [];
+  var seenTypes = {};
+  data.foodTypes = [];
+  var gr = new GlideRecordSecure(CFG.table);
+  gr.addQuery(CFG.status, CFG.openValue);
+  gr.orderBy(CFG.pickupBy);
+  gr.setLimit(60);
+  gr.query();
+  while (gr.next()) {
+    var c = card(gr);
+    data.listings.push(c);
+    if (c.foodTypeValue && !seenTypes[c.foodTypeValue]) {
+      seenTypes[c.foodTypeValue] = true;
+      data.foodTypes.push({ value: c.foodTypeValue, label: c.foodType });
+    }
+  }
+
+  /* ---------- my claimed pickups ---------- */
+  data.myClaims = [];
+  var me = myRecipientId();
+  if (me) {
+    var mine = new GlideRecordSecure(CFG.table);
+    mine.addQuery(CFG.status, CFG.claimedValue);
+    mine.addQuery(CFG.claimedBy, me);
+    mine.orderBy(CFG.pickupBy);
+    mine.query();
+    while (mine.next()) data.myClaims.push(card(mine));
+  }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-19 14:20:50</sys_created_on>
+        <sys_id>576a65ddc04813107f44860cde1b6994</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FeedNow Open Listings</sys_name>
+        <sys_package display_value="FeedNow " source="x_1234_feednow">0a45b2d030cc13107f44e33af865b463</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FeedNow ">0a45b2d030cc13107f44e33af865b463</sys_scope>
+        <sys_update_name>sp_widget_576a65ddc04813107f44860cde1b6994</sys_update_name>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 14:36:18</sys_updated_on>
+        <template><![CDATA[
+<!-- FeedNow · Open listings widget — paste into the HTML Template pane -->
+<div class="fn-listings">
+
+  <div class="fn-head">
+    <div>
+      <p class="fn-eyebrow">RECIPIENT VIEW</p>
+      <h1 class="fn-title">Food near you, closing tonight</h1>
+      <p class="fn-muted fn-sub">First to claim gets it.</p>
+    </div>
+    <div class="fn-chips" role="group" aria-label="Filter by food type">
+      <button type="button" class="fn-chip" ng-class="{active: c.filter == 'all'}" ng-click="c.filter = 'all'">All</button>
+      <button type="button" class="fn-chip" ng-repeat="t in data.foodTypes"
+              ng-class="{active: c.filter == t.value}" ng-click="c.filter = t.value">{{t.label}}</button>
+    </div>
+  </div>
+
+  <div class="fn-layout">
+    <section class="fn-grid" aria-label="Open listings">
+
+      <div class="fn-card fn-empty" ng-if="c.visible().length == 0">
+        <h2>No open listings right now</h2>
+        <p class="fn-muted">New food appears here the moment a donor posts it.</p>
+      </div>
+
+      <article class="fn-card fn-listing" ng-repeat="l in c.visible() track by l.sys_id">
+        <div class="fn-row">
+          <span class="fn-donor">{{l.donor}}</span>
+          <span class="fn-pill" ng-class="l.urgent ? 'fn-pill-urgent' : 'fn-pill-open'">{{l.timerLabel}}</span>
+        </div>
+        <h2 class="fn-item">{{l.items}}</h2>
+        <div class="fn-meta">
+          <span ng-if="l.weight">{{l.weight}} kg</span>
+          <span ng-if="l.foodType">{{l.foodType}}</span>
+          <span ng-if="l.pickupBy">Pickup by {{l.pickupBy}}</span>
+        </div>
+        <p class="fn-allergens">Allergens: {{l.allergens || 'none listed'}}</p>
+        <span class="fn-pill fn-pill-warning" ng-if="l.perishable">Perishable</span>
+        <button type="button" class="btn btn-primary btn-block" ng-click="c.claim(l)" ng-disabled="c.busy">
+          Claim
+        </button>
+      </article>
+    </section>
+
+    <aside class="fn-side">
+      <div class="fn-card">
+        <h2 class="fn-side-title">My pickups</h2>
+        <p class="fn-muted" ng-if="data.myClaims.length == 0">Nothing claimed yet. Claim a listing and its pickup time shows here.</p>
+        <div class="fn-claim" ng-repeat="m in data.myClaims">
+          <strong>{{m.items}}</strong>
+          <div class="fn-muted">{{m.donor}}<span ng-if="m.weight"> · {{m.weight}} kg</span></div>
+          <div class="fn-due">Collect by {{m.pickupBy}}</div>
+        </div>
+      </div>
+
+      <div class="fn-card-dark">
+        <h2 class="fn-side-title">Reliability</h2>
+        <p>Missed pickups add a strike. At 3 strikes your account is paused until an admin reviews it.</p>
+      </div>
+
+      <a class="btn btn-fn-post btn-block" href="?id=fn_post_food">Post surplus food</a>
+    </aside>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>576a65ddc04813107f44860cde1b6994</id>
+        <sys_created_by>Brittany</sys_created_by>
+        <sys_created_on>2026-10-19 14:20:51</sys_created_on>
+        <sys_id>976aedddc04813107f44860cde1b69e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Brittany</sys_updated_by>
+        <sys_updated_on>2026-10-19 14:20:51</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
